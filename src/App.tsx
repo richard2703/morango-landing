@@ -1,35 +1,64 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import MainLayout from "./layouts/MainLayout";
+import './App.css';
+import Cart from './components/individuales/card';
+
+import banner from './img/banner.jpg';
+import isologo from './img/isotipoBlc.png';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <html>
+      <head>
+        <title>Morango</title>
+      </head>
+      <body className="bg-gray-100 text-gray-900">
+        <MainLayout>
+          {/* Banner Section */}
+          <section >
+            <div style={sectionStyle} className="content-center" >
+              <img src={isologo} alt="Banner" style={isologoStyle} />
+            </div>
+          </section>
+
+          {/* // Cards Section */}
+          <section className="py-12">
+            <Cart />
+          </section>
+
+          {/* seccion de ubicacione */}
+
+          {/* seccion de opiniones */}
+
+          {/* seccion de eslogan */}
+
+          {/* seccion de menu */}
+
+          {/* seccion de redes */}
+
+        </MainLayout>
+      </body>
+    </html>
+
+  );
 }
 
-export default App
+var sectionStyle = {
+  width: "100%",
+  height: "600px",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundImage: `url(${banner})`
+
+};
+
+var isologoStyle = {
+  width: "200px",
+  height: "auto",
+  margin: "0 auto",
+  display: "block",
+  paddingTop: "50px",
+  paddingBottom: "50px"
+};
+
+export default App;
