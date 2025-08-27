@@ -3,7 +3,6 @@ const LifestyleCard = ({
   category = "Categoría",
   description = "",
   imageUrl = "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-  tags = [],
   onClick = () => {}
 }) => {
   return (
@@ -45,20 +44,6 @@ const LifestyleCard = ({
         {description && (
           <p className="text-gray-600 text-sm mt-3">{description}</p>
         )}
-        
-        {/* Etiquetas/tags opcionales */}
-        {tags && tags.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-4">
-            {tags.map((tag, index) => (
-              <span 
-                key={index}
-                className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );
@@ -79,7 +64,6 @@ const Cart = () => {
           title="Home & Lifestyle"
           category="Decoración"
           description="Encuentra los mejores productos para tu hogar"
-          tags={['Hogar', 'Estilo']}
           onClick={handleCardClick}
         />
         
@@ -89,7 +73,6 @@ const Cart = () => {
           category="Gastronomía"
           description="Descubre nuevos sabores y experiencias culinarias"
           imageUrl="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-          tags={['Comida', 'Bebidas']}
           onClick={handleCardClick}
         />
         
@@ -99,7 +82,6 @@ const Cart = () => {
           category="Bienestar"
           description="Cuida tu salud y bienestar con nuestros servicios"
           imageUrl="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-          tags={['Salud', 'Bienestar']}
           onClick={handleCardClick}
         />
       </div>
