@@ -7,7 +7,7 @@ import smothies from '../../img/smoothies.jpg';
 
 const Ubicacion = ({ }) => {
     return (
-        <div className=" flex items-center justify-center min-h-screen">
+        <div className=" flex items-center justify-center ">
             <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-0  rounded-3xl overflow-hidden shadow-2xl">
 
                 {/* Imagen del smoothie - Lado Izquierdo */}
