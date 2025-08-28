@@ -2,6 +2,7 @@ import MainLayout from "./layouts/MainLayout";
 import './App.css';
 import Cart from './components/individuales/card';
 import Ubicacion from "./components/individuales/ubicacion";
+import ClientsSection from "./components/individuales/comentarios";
 
 import banner from './img/banner.jpg';
 import isologo from './img/isotipoBlc.png';
@@ -32,7 +33,9 @@ function App() {
             <Ubicacion />
           </section>
           {/* seccion de opiniones */}
-
+          <section >
+            <ClientsSection />
+          </section>
           {/* seccion de eslogan */}
 
           {/* seccion de menu */}
