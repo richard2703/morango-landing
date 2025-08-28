@@ -1,6 +1,6 @@
 import bowl from '../../img/bowl1.jpg';
 import combo from '../../img/combo2.jpg';
-import smoothie from '../../img/smoothie1.jpg';
+import smoothie from '../../img/smoothie2.jpg';
 
 const LifestyleCard = ({
   title = "Home & Lifestyle",
