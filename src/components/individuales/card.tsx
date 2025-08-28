@@ -1,5 +1,5 @@
 import bowl from '../../img/bowl1.jpg';
-import combo from '../../img/combo1.jpg';
+import combo from '../../img/combo2.jpg';
 import smoothie from '../../img/smoothie1.jpg';
 
 const LifestyleCard = ({
