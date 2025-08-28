@@ -11,20 +11,17 @@
 
     color: var(--blanco);
     background-color: var(--Lgreen);
-    
 
-  /* display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-color: #f9f9f9;
-  color: #333;    */
+}
 
+@theme {
+    --Lgreen: #005120;
+    --Agreen: #abc846;
+    --violeta: #6e3766;
+    --rosa: #da2f6e;
+    --blanco: #faf4f8;
+    --blue: #1c5c99;
+    --Bblue: #c4e0f2;
 }
 
 .logo {

@@ -1,6 +1,7 @@
 import MainLayout from "./layouts/MainLayout";
 import './App.css';
 import Cart from './components/individuales/card';
+import Ubicacion from "./components/individuales/ubicacion";
 
 import banner from './img/banner.jpg';
 import isologo from './img/isotipoBlc.png';
@@ -22,12 +23,14 @@ function App() {
           </section>
 
           {/* // Cards Section */}
-          <section className="py-12">
+          <section style={cardsStyle}>
             <Cart />
           </section>
 
           {/* seccion de ubicacione */}
-
+          <section >
+            <Ubicacion />
+          </section>
           {/* seccion de opiniones */}
 
           {/* seccion de eslogan */}
@@ -60,5 +63,12 @@ var isologoStyle = {
   paddingTop: "50px",
   paddingBottom: "50px"
 };
+
+var cardsStyle = {
+  backgroundColor: "#faf4f8",
+  paddingTop: "50px",
+  paddingBottom: "50px"
+   };
+
 
 export default App;
