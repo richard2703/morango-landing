@@ -9,40 +9,22 @@ import detox from '../../img/detox.jpg';
 import nutella from '../../img/nutella.jpg';
 const MenuSection = () => {
   return (
-    <div className="min-h-screen ">
+    <div className=" ">
       {/* Header with curved text and logos */}
       <div className="relative bg-white pt-8 pb-4 overflow-hidden min-h-24">
         <div className="relative z-10 max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-start">
             {/* Left logo/icon */}
             <img src={d2rose} alt="" className="w-12 h-12" />
-            {/* <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center transform -rotate-12">
-              <div className="w-8 h-8 bg-white rounded-lg"></div>
-            </div> */}
-
             {/* Center curved text */}
             <div className="flex-1 text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#abc846]">
                 conéctate con lo esencial,disfruta lo natural
               </p>
-              {/* <svg viewBox="0 0 400 200" className="w-full max-w-md mx-auto">
-                <defs>
-                  <path id="curve" d="M 50,40 Q 200,10 350,40" />
-                </defs>
-                <text className="fill-lime-500 text-lg font-medium">
-                  <textPath href="#curve" startOffset="50%" textAnchor="middle">
-                    conéctate con lo esencial, disfruta lo natural
-                  </textPath>
-                </text>
-              </svg> */}
             </div>
 
             {/* Right logo */}
             <img src={d7rose} alt="" className="w-18 " />
-
-            {/* <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center">
-              <div className="text-white font-bold text-xl">m</div>
-            </div> */}
           </div>
         </div>
       </div>
@@ -68,7 +50,7 @@ const MenuSection = () => {
             </svg> */}
           </div>
           <div className="absolute bottom-4 left-4 w-18 text-lime-400 ">
-                        <img src={d6aver} alt="" />
+            <img src={d6aver} alt="" />
 
             {/* <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
@@ -84,7 +66,7 @@ const MenuSection = () => {
 
           {/* Smoothie glasses illustration */}
           <div className="flex space-x-3 mb-6 z-10">
-            <img src={smoothies} alt="" className="w-full  object-cover rounded-full"/>
+            <img src={smoothies} alt="" className="w-full  object-cover rounded-full" />
             {/* <div className="w-12 h-16 bg-gradient-to-t from-orange-300 to-orange-200 rounded-lg opacity-90"></div>
             <div className="w-12 h-16 bg-gradient-to-t from-yellow-300 to-yellow-200 rounded-lg opacity-90"></div>
             <div className="w-12 h-16 bg-gradient-to-t from-green-300 to-green-200 rounded-lg opacity-90"></div>
@@ -121,7 +103,7 @@ const MenuSection = () => {
 
           {/* Green drink illustration */}
           <div className="mb-8 z-10">
-            <img src={detox} alt="" className="w-full h-full object-cover rounded-full"/>
+            <img src={detox} alt="" className="w-full h-full object-cover rounded-full" />
             {/* <div className="w-20 h-24 bg-gradient-to-t from-green-500 to-green-300 rounded-lg relative">
               <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-t from-green-400 to-green-200 rounded-lg"></div>
               <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-6 h-4 bg-green-600 rounded-t-lg"></div>
@@ -141,25 +123,11 @@ const MenuSection = () => {
         {/* Acai Bowl Section */}
         <div className="relative bg-[#da2f6e] flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
           <div className="absolute bottom-4 left-4 w-10 text-lime-400 ">
-                        <img src={d5bblue} alt="" />
+            <img src={d5bblue} alt="" />
           </div>
           {/* Acai bowl illustration */}
           <div className="mb-8 z-10">
             <img src={nutella} alt="" className="w-full h-full object-cover rounded-full" />
-
-            {/* <div className="w-24 h-24 bg-white rounded-full p-2"> */}
-
-            {/* <div className="w-full h-full bg-gradient-to-br from-purple-600 to-purple-800 rounded-full relative overflow-hidden"> */}
-            {/* Toppings */}
-            {/* <div className="absolute top-2 left-3 w-3 h-3 bg-red-400 rounded-full"></div>
-                <div className="absolute top-3 right-4 w-2 h-2 bg-yellow-300 rounded-full"></div>
-                <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-4 h-1 bg-yellow-200 rounded-full"></div>
-                <div className="absolute bottom-4 left-4 w-2 h-2 bg-green-300 rounded-full"></div>
-                <div className="absolute bottom-3 right-3 w-3 h-3 bg-red-300 rounded-full"></div> */}
-            {/* Spiral pattern */}
-            {/* <div className="absolute inset-2 border-2 border-yellow-200 rounded-full opacity-60"></div> */}
-            {/* </div> */}
-            {/* </div> */}
           </div>
 
           {/* Label */}

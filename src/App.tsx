@@ -4,6 +4,7 @@ import Cart from './components/individuales/card';
 import Ubicacion from "./components/homePage/ubicacion";
 import ClientsSection from "./components/homePage/comentarios";
 import MenuSection from "./components/homePage/menu";
+import SocialMediaSection from "./components/homePage/redes";
 
 import banner from './img/banner.jpg';
 import isologo from './img/isotipoBlc.png';
@@ -42,6 +43,9 @@ function App() {
             <MenuSection />
           </section>
           {/* seccion de redes */}
+          <section >
+            <SocialMediaSection />
+          </section>
 
         </MainLayout>
       </body>
