@@ -4,7 +4,7 @@ import smoothie from '../../img/smoothie2.jpg';
 
 const LifestyleCard = ({
   title = "Home & Lifestyle",
-  category = "Categoría",
+  // category = "Categoría",
   description = "",
   imageUrl = "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
   bgColor = "#1c5c99",
@@ -34,7 +34,7 @@ const LifestyleCard = ({
           {/* Título y categoría */}
           <div className="flex-1">
             <h3 className={`${txColor} text-xl font-bold mb-1`}>{title}</h3>
-            <p className={`${txColor} text-sm`}>{category}</p>
+            {/* <p className={`${txColor} text-sm`}>{category}</p> */}
           </div>
 
           {/* Botón de acción */}

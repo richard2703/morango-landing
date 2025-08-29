@@ -1,8 +1,9 @@
 import MainLayout from "./layouts/MainLayout";
 import './App.css';
 import Cart from './components/individuales/card';
-import Ubicacion from "./components/individuales/ubicacion";
-import ClientsSection from "./components/individuales/comentarios";
+import Ubicacion from "./components/homePage/ubicacion";
+import ClientsSection from "./components/homePage/comentarios";
+import MenuSection from "./components/homePage/menu";
 
 import banner from './img/banner.jpg';
 import isologo from './img/isotipoBlc.png';
@@ -36,10 +37,10 @@ function App() {
           <section >
             <ClientsSection />
           </section>
-          {/* seccion de eslogan */}
-
-          {/* seccion de menu */}
-
+          {/* seccion de eslogan y menu */}
+          <section >
+            <MenuSection />
+          </section>
           {/* seccion de redes */}
 
         </MainLayout>
