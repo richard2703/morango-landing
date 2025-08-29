@@ -23,10 +23,10 @@ const Header: React.FC = () => {
         {/* Menu Desktop */}
         <nav className="hidden md:block">
           <ul className="flex space-x-8 text-white font-medium text-lg">
-            <li className="cursor-pointer hover:text-green-200 transition-colors duration-200">
+            <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 " >
               menú
             </li>
-            <li className="cursor-pointer hover:text-green-200 transition-colors duration-200">
+            <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
               ubicación
             </li>
             <li className="cursor-pointer hover:text-green-200 transition-colors duration-200">

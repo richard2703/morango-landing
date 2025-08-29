@@ -86,9 +86,14 @@ const LifestyleCard = ({
 
 // Ejemplo de uso del componente
 const Card = () => {
-  const handleCardClick = () => {
-    console.log('Card clicked!');
-    // Aquí puedes agregar tu lógica de navegación
+  const uber = () => {
+    window.open('https://www.ubereats.com/mx/store/morango-zona-real/3gZwdjZBUOqHTqprUyZLqg?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMk1pcmF2YWxsZSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpRLV93UllheUtJUVI2NWZES2xTOXBVayUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0EyMC42MTcxOTM1JTJDJTIybG9uZ2l0dWRlJTIyJTNBLTEwMy4zNTE1MDkxJTdE&ps=1', '_blank')
+  };
+    const rappi = () => {
+    window.open('https://www.rappi.com.mx/restaurantes/delivery/596201-morango-gdl?utm_source=app&utm_medium=deeplink&utm_campaign=share', '_blank')
+  };
+    const didi = () => {
+    window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')
   };
 
   return (
@@ -104,7 +109,7 @@ const Card = () => {
           bgColor="#6e3766"
           txColor="text-[#faf4f8]"
           brColor="#faf4f8"
-          onClick={handleCardClick}
+          onClick={uber}
         />
 
         {/* Ejemplo 2 - Food & Drinks */}
@@ -117,7 +122,7 @@ const Card = () => {
           bgColor="#c4e0f2"
           txColor="text-[#005120]"
           brColor="#005120"
-          onClick={handleCardClick}
+          onClick={rappi}
         />
 
         {/* Ejemplo 3 - Health & Wellness */}
@@ -130,7 +135,7 @@ const Card = () => {
           bgColor="#da2f6e"
           txColor="text-[#faf4f8]"
           brColor="#faf4f8"
-          onClick={handleCardClick}
+          onClick={didi}
         />
       </div>
     </div>

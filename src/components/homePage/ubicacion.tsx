@@ -1,4 +1,4 @@
-import { MapPin} from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import d4mor from '../../img/decorativos/4MOR.png';
 import d6mor from '../../img/decorativos/6MOR.png';
 import d4blc from '../../img/decorativos/4BLC.png';
@@ -38,15 +38,16 @@ const Ubicacion = ({ }) => {
                             ¿Dónde estamos?
                         </h2>
 
-                        <div className="flex items-center space-x-4">
+                        <div className="flex items-center space-x-4 cursor-pointer"
+                            onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
                             <div className="bg-white bg-opacity-25 rounded-full p-4 backdrop-blur-sm">
                                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                                     <MapPin className="w-6 h-6 text-green-600" />
                                 </div>
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <h3 className="text-xl font-bold">Valle Real</h3>
-                                <p className="text-sm opacity-90">Visítanos en nuestra sucursal</p>
+                                <p className="text-sm opacity-90">Visítanos en nuestra sucursal • Clic para abrir Maps</p>
                             </div>
                         </div>
                     </div>
