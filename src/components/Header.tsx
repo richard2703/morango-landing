@@ -73,7 +73,7 @@ const Header: React.FC = () => {
                 <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg">
                   menú
                 </li>
-                <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg">
+                <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg" onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
                   ubicación
                 </li>
                 <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg">

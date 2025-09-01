@@ -29,7 +29,6 @@ function App() {
           <section style={cardsStyle}>
             <Cart />
           </section>
-
           {/* seccion de ubicacione */}
           <section >
             <Ubicacion />
