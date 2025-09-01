@@ -97,7 +97,7 @@ const ClientsSection = () => {
         </div>
 
         {/* Versión móvil alternativa */}
-        <div className="lg:hidden space-y-6">
+        {/* <div className="lg:hidden space-y-6">
           {clients.map((client) => (
             <div 
               key={client.id}
@@ -118,11 +118,11 @@ const ClientsSection = () => {
                   {client.description}
                 </p>
               </div>
-              {/* Elementos decorativos */}
+              Elementos decorativos
               <div className="absolute top-3 right-3 w-12 h-12 bg-white/20 rounded-full"></div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

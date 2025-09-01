@@ -1,82 +1,21 @@
 import MainLayout from "./layouts/MainLayout";
 import './App.css';
-import Cart from './components/individuales/card';
-import Ubicacion from "./components/homePage/ubicacion";
-import ClientsSection from "./components/homePage/comentarios";
-import MenuSection from "./components/homePage/menu";
-import SocialMediaSection from "./components/homePage/redes";
+import Franquicias from "./pages/Franquicias";
+import Home from "./pages/Inicio";
 
-import banner from './img/banner.jpg';
-import isologo from './img/isotipoBlc.png';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <html>
-      <head>
-        <title>Morango</title>
-      </head>
-      <body className="bg-gray-100 text-gray-900">
-        <MainLayout>
-          {/* Banner Section */}
-          <section >
-            <div style={sectionStyle} className="content-center" >
-              <img src={isologo} alt="Banner" style={isologoStyle} />
-            </div>
-          </section>
-
-          {/* // Cards Section */}
-          <section style={cardsStyle}>
-            <Cart />
-          </section>
-
-          {/* seccion de ubicacione */}
-          <section >
-            <Ubicacion />
-          </section>
-          {/* seccion de opiniones */}
-          <section >
-            <ClientsSection />
-          </section>
-          {/* seccion de eslogan y menu */}
-          <section >
-            <MenuSection />
-          </section>
-          {/* seccion de redes */}
-          <section >
-            <SocialMediaSection />
-          </section>
-
-        </MainLayout>
-      </body>
-    </html>
-
+    <Router>
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/franquicias" element={<Franquicias />} />
+        </Routes>
+      </MainLayout>
+    </Router>
   );
 }
-
-var sectionStyle = {
-  width: "100%",
-  height: "600px",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundImage: `url(${banner})`
-
-};
-
-var isologoStyle = {
-  width: "200px",
-  height: "auto",
-  margin: "0 auto",
-  display: "block",
-  paddingTop: "50px",
-  paddingBottom: "50px"
-};
-
-var cardsStyle = {
-  backgroundColor: "#faf4f8",
-  paddingTop: "50px",
-  paddingBottom: "50px"
-   };
-
 
 export default App;
