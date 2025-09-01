@@ -55,15 +55,15 @@ const Franquicias = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div className="min-h-screen  bg-[#faf4f8]">
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
           {/* Icono principal animado */}
           <div className="flex justify-center mb-8">
             <div className="relative">
-              <div className="absolute inset-0 bg-blue-600 rounded-full opacity-20 animate-pulse scale-150"></div>
-              <div className="relative bg-blue-600 p-6 rounded-full">
+              <div className="absolute inset-0 bg-[#005120] rounded-full opacity-20 animate-pulse scale-150"></div>
+              <div className="relative bg-[#005120] p-6 rounded-full">
                 <Store className="h-16 w-16 text-white" />
               </div>
             </div>
@@ -71,22 +71,22 @@ const Franquicias = () => {
 
           {/* Título principal */}
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-[#005120] bg-clip-text text-transparent">
               Franquicias
             </span>
             <br />
-            <span className="text-3xl md:text-4xl text-gray-600 font-medium">
+            <span className="text-3xl md:text-4xl text-[#005120] font-medium">
               Próximamente
             </span>
           </h1>
 
           {/* Subtítulo */}
-          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-[#005120] mb-12 max-w-3xl mx-auto leading-relaxed">
             Estamos preparando algo increíble para ti. Pronto podrás ser parte de nuestra red de franquicias y hacer crecer tu negocio con nosotros.
           </p>
 
           {/* Características principales */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {/* <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Store className="h-8 w-8 text-blue-600" />
@@ -110,10 +110,10 @@ const Franquicias = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Crecimiento Rápido</h3>
               <p className="text-gray-600">Oportunidad de expansión acelerada con nuestro modelo de negocio</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Timeline/Roadmap */}
-          <div className="bg-white p-8 rounded-2xl shadow-xl mb-12">
+          {/* <div className="bg-white p-8 rounded-2xl shadow-xl mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">¿Qué estamos preparando?</h2>
             <div className="grid md:grid-cols-2 gap-8 text-left">
               <div className="space-y-6">
@@ -149,10 +149,10 @@ const Franquicias = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Call to Action */}
-<div className="bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-2xl shadow-xl max-w-2xl mx-auto text-white mb-12">
+<div className="bg-[#6e3766] p-8 rounded-2xl shadow-xl max-w-2xl mx-auto text-white mb-12">
         <h2 className="text-2xl font-bold mb-4">
           ¡Sé el primero en conocer cuando lancemos!
         </h2>
@@ -174,7 +174,7 @@ const Franquicias = () => {
             type="button"
             onClick={handleSubscribe}
             disabled={isLoading}
-            className="bg-white text-blue-600 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed px-8 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
+            className="bg-white hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed px-8 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
           >
             <Mail className="h-5 w-5" />
             {isLoading ? 'Enviando...' : 'Notificarme'}
@@ -184,7 +184,7 @@ const Franquicias = () => {
         {/* Mensajes de estado */}
         {isSubscribed && (
           <div className="mt-4 p-3 bg-green-500/20 backdrop-blur-sm text-green-100 rounded-lg border border-green-400/30">
-            ¡Gracias! Te hemos agregado a nuestra lista de suscriptores.
+            ¡Gracias! Te hemos agregado a nuestra lista.
           </div>
         )}
 
@@ -194,14 +194,14 @@ const Franquicias = () => {
           </div>
         )}
 
-        <p className="text-xs opacity-75 mt-4 text-center">
+        {/* <p className="text-xs opacity-75 mt-4 text-center">
           Al suscribirte, aceptas recibir emails sobre nuestras franquicias. 
           Puedes darte de baja en cualquier momento.
-        </p>
+        </p> */}
       </div>
 
           {/* Beneficios adicionales */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-4">¿Por qué elegir nuestra franquicia?</h3>
               <ul className="space-y-3 text-left text-gray-600">
@@ -245,10 +245,10 @@ const Franquicias = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           {/* Información de contacto */}
-          <div className="bg-gray-50 p-8 rounded-2xl">
+          {/* <div className="bg-gray-50 p-8 rounded-2xl">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">¿Tienes preguntas?</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="flex flex-col items-center gap-3 p-4 bg-white rounded-lg">
@@ -273,7 +273,7 @@ const Franquicias = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ const Header: React.FC = () => {
           <img 
             src={Logo} 
             className="h-8 w-auto logo" 
-            alt="Morango logo" 
+            alt="Morango logo" onClick={() => (window.location.href = "/")}
           />
         </div>
 
