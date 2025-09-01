@@ -1,35 +1,81 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import MainLayout from "./layouts/MainLayout";
+import './App.css';
+import Cart from './components/individuales/card';
+import Ubicacion from "./components/homePage/ubicacion";
+import ClientsSection from "./components/homePage/comentarios";
+import MenuSection from "./components/homePage/menu";
+import SocialMediaSection from "./components/homePage/redes";
+
+import banner from './img/banner.jpg';
+import isologo from './img/isotipoBlc.png';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <html>
+      <head>
+        <title>Morango</title>
+      </head>
+      <body className="bg-gray-100 text-gray-900">
+        <MainLayout>
+          {/* Banner Section */}
+          <section >
+            <div style={sectionStyle} className="content-center" >
+              <img src={isologo} alt="Banner" style={isologoStyle} />
+            </div>
+          </section>
+
+          {/* // Cards Section */}
+          <section style={cardsStyle}>
+            <Cart />
+          </section>
+          {/* seccion de ubicacione */}
+          <section >
+            <Ubicacion />
+          </section>
+          {/* seccion de opiniones */}
+          <section >
+            <ClientsSection />
+          </section>
+          {/* seccion de eslogan y menu */}
+          <section >
+            <MenuSection />
+          </section>
+          {/* seccion de redes */}
+          <section >
+            <SocialMediaSection />
+          </section>
+
+        </MainLayout>
+      </body>
+    </html>
+
+  );
 }
 
-export default App
+var sectionStyle = {
+  width: "100%",
+  height: "600px",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundImage: `url(${banner})`
+
+};
+
+var isologoStyle = {
+  width: "200px",
+  height: "auto",
+  margin: "0 auto",
+  display: "block",
+  paddingTop: "50px",
+  paddingBottom: "50px"
+};
+
+var cardsStyle = {
+  backgroundColor: "#faf4f8",
+  paddingTop: "50px",
+  paddingBottom: "50px"
+   };
+
+
+export default App;
