@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Store, Clock, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import  { useState } from 'react';
+import { Store, Mail  } from 'lucide-react';
 
 const Franquicias = () => {
   const [email, setEmail] = useState('');
