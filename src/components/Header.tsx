@@ -32,7 +32,7 @@ const Header: React.FC = () => {
             {/* <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" onClick={() => (window.location.href = "/franquicias")}>
               franquicias
             </li> */}
-                        <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" onClick={() => (window.location.href = "/franquicias")}>
+                        <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" >
               franquicias
             </li>
           </ul>
