@@ -9,13 +9,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="w-screen shadow-md relative "  >
-      <div className="w-full px-4 py-4 flex items-center justify-between">
+<header className="w-screen shadow-md relative">
+      <div className="w-full px-4 py-4  pr-6 flex items-center justify-between">
         {/* Logo */}
         <div className="cursor-pointer">
           <img 
             src={Logo} 
-            className="h-8 w-auto logo" 
+            className="h-8 w-auto logo pl-2" 
             alt="Morango logo" onClick={() => (window.location.href = "/")}
           />
         </div>
