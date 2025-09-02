@@ -14,14 +14,8 @@
 
 }
 
-@theme {
-    --Lgreen: #005120;
-    --Agreen: #abc846;
-    --violeta: #6e3766;
-    --rosa: #da2f6e;
-    --blanco: #faf4f8;
-    --blue: #1c5c99;
-    --Bblue: #c4e0f2;
+html, body {
+  overflow-x: hidden;
 }
 
 .logo {

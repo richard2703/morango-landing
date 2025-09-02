@@ -9,13 +9,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="w-screen shadow-md relative "  >
-      <div className="w-full px-4 py-4 flex items-center justify-between">
+<header className="w-screen shadow-md relative">
+      <div className="w-full px-4 py-4  pr-6 flex items-center justify-between">
         {/* Logo */}
         <div className="cursor-pointer">
           <img 
             src={Logo} 
-            className="h-8 w-auto logo" 
+            className="h-8 w-auto logo pl-2" 
             alt="Morango logo" onClick={() => (window.location.href = "/")}
           />
         </div>
@@ -29,12 +29,10 @@ const Header: React.FC = () => {
             <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
               ubicación
             </li>
-            {/* <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" onClick={() => (window.location.href = "/franquicias")}>
-              franquicias
-            </li> */}
-                        <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" >
+            <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" onClick={() => (window.location.href = "/franquicias")}>
               franquicias
             </li>
+   
           </ul>
         </nav>
 
