@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import  { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Datos de las categorías del menú (duplicamos y agregamos más)
@@ -77,16 +77,16 @@ const MenuCarousel = () => {
   };
 
   // Función para ir a un slide específico
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
+  const goToSlide = (newIndex: number) => {
+    setCurrentIndex(newIndex);
   };
 
   // SVG Circle component para las decoraciones
-  const CircleSVG = () => (
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-    </svg>
-  );
+  // const CircleSVG = () => (
+  //   <svg viewBox="0 0 24 24" fill="currentColor">
+  //     <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+  //   </svg>
+  // );
 
   return (
     <div className="relative w-full max-w-6xl mx-auto">
@@ -110,18 +110,18 @@ const MenuCarousel = () => {
                       style={{ backgroundColor: category.bgColor }}
                     >
                       {/* Decoraciones de fondo */}
-                      {category.decorations.map((decoration, index) => (
-                        <div 
-                          key={index} 
-                          className={`absolute ${decoration.position} ${decoration.type === 'svg' ? decoration.color + ' ' + decoration.size : 'text-lime-400'}`}
-                        >
-                          {decoration.type === 'svg' ? (
-                            <CircleSVG />
-                          ) : (
-                            <img src={decoration.src} alt={decoration.alt} className="w-full h-full object-contain" />
-                          )}
-                        </div>
-                      ))}
+                      {/* {category.decorations.map((decoration, index) => (
+                        // <div 
+                        //   key={index} 
+                        //   className={`absolute ${decoration.position} ${decoration.type === 'svg' ? decoration.color + ' ' + decoration.size : 'text-lime-400'}`}
+                        // >
+                        //   {decoration.type === 'svg' ? (
+                        //     <CircleSVG />
+                        //   ) : (
+                        //     <img src={decoration.src} alt={decoration.alt} className="w-full h-full object-contain" />
+                        //   )}
+                        // </div>
+                      ))} */}
 
                       {/* Imagen principal */}
                       <div className="flex space-x-3 mb-6 z-10 pt-4">

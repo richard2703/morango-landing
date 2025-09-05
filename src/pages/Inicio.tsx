@@ -58,14 +58,14 @@ const Inicio = () => {
 
 // };
 
-var isologoStyle = {
-  width: "200px",
-  height: "auto",
-  margin: "0 auto",
-  display: "block",
-  paddingTop: "50px",
-  paddingBottom: "50px"
-};
+// var isologoStyle = {
+//   width: "200px",
+//   height: "auto",
+//   margin: "0 auto",
+//   display: "block",
+//   paddingTop: "50px",
+//   paddingBottom: "50px"
+// };
 
 var cardsStyle = {
   backgroundColor: "#faf4f8",

@@ -39,15 +39,15 @@ const BannerCarousel = () => {
 
     // Auto-play opcional (descomenta si lo quieres)
 
-    //   useEffect(() => {
-    //     const interval = setInterval(() => {
-    //       setCurrentIndex((prevIndex) => 
-    //         prevIndex === banners.length - 1 ? 0 : prevIndex + 1
-    //       );
-    //     }, 5000); // Cambia cada 5 segundos
+      useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) => 
+            prevIndex === banners.length - 1 ? 0 : prevIndex + 1
+          );
+        }, 5000); // Cambia cada 5 segundos
 
-    //     return () => clearInterval(interval);
-    //   }, [banners.length]);
+        return () => clearInterval(interval);
+      }, [banners.length]);
 
 
     const goToPrevious = () => {
@@ -57,9 +57,9 @@ const BannerCarousel = () => {
     const goToNext = () => {
         setCurrentIndex(currentIndex === banners.length - 1 ? 0 : currentIndex + 1);
     };
-
-    const goToSlide = (index) => {
-        setCurrentIndex(index);
+  
+    const goToSlide = (newIndex: number) => {
+        setCurrentIndex(newIndex);
     };
 
     return (
@@ -69,7 +69,7 @@ const BannerCarousel = () => {
                 className="flex transition-transform duration-500 ease-in-out h-full"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-                {banners.map((banner, index) => (
+                {banners.map((banner) => (
                     <div
                         key={banner.id}
                         className={`min-w-full relative flex items-center justify-center ${banner.textColor}`}

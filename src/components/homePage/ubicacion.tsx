@@ -1,4 +1,4 @@
-import { MapPin } from 'lucide-react';
+// import { MapPin } from 'lucide-react';
 import d4mor from '../../img/decorativos/4MOR.png';
 import d6mor from '../../img/decorativos/6MOR.png';
 // import d4blc from '../../img/decorativos/4BLC.png';
