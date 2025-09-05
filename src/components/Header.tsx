@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from '../img/logoPblc.png'
+import Logo from '../img/logos/logoPver.png'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   };
 
   return (
-<header className="w-screen shadow-md relative">
+<header className="w-screen shadow-md  relative">
       <div className="w-full px-4 py-4  pr-6 flex items-center justify-between">
         {/* Logo */}
         <div className="cursor-pointer">
@@ -22,15 +22,15 @@ const Header: React.FC = () => {
 
         {/* Menu Desktop */}
         <nav className="hidden md:block">
-          <ul className="flex space-x-8 text-white font-medium text-lg">
-            <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 " >
+          <ul className="flex space-x-8 text-[#005120] font-medium text-lg">
+            {/* <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 " >
               menú
-            </li>
+            </li> */}
             <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
-              ubicación
+              Ubicación
             </li>
             <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" onClick={() => (window.location.href = "/franquicias")}>
-              franquicias
+              Franquicias
             </li>
    
           </ul>
@@ -71,9 +71,9 @@ const Header: React.FC = () => {
           <div className="absolute top-full left-0 w-full bg-green-700 md:hidden z-50">
             <nav className="px-4 py-4">
               <ul className="space-y-4">
-                <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg">
+                {/* <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg">
                   menú
-                </li>
+                </li> */}
                 <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg" onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
                   ubicación
                 </li>

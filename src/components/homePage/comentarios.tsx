@@ -7,7 +7,7 @@ const ClientsSection = () => {
   const clients = [
     {
       id: 1,
-      title: "la macorita",
+      title: "Ana Lilia",
       description: "Açaí delicioso!  Tienen una opción que ya tiene la proteína en la mezcla, postre sano!!!.",
       image: (coment1),
       bgColor: "bg-[#da2f6e]",
