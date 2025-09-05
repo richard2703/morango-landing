@@ -101,12 +101,12 @@ const Card = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Ejemplo 1 - Home & Lifestyle */}
         <LifestyleCard
-          title="Fashion & Accessories"
+          title="Ordena desde Uber "
           // category="Decoración"
           // description="Encuentra los mejores productos para tu hogar"
           imageUrl={bowl}
           // tags={['Hogar', 'Estilo']}
-          bgColor="#6e3766"
+          bgColor="#005120"
           txColor="text-[#faf4f8]"
           brColor="#faf4f8"
           onClick={uber}
@@ -114,7 +114,7 @@ const Card = () => {
 
         {/* Ejemplo 2 - Food & Drinks */}
         <LifestyleCard
-          title="Home & Lifestyle"
+          title="Ordena desde Didi"
           // category="Gastronomía"
           // description="Descubre nuevos sabores y experiencias culinarias"
           imageUrl={combo}
@@ -127,7 +127,7 @@ const Card = () => {
 
         {/* Ejemplo 3 - Health & Wellness */}
         <LifestyleCard
-          title="Food & Drinks"
+          title="Ordena y recoge"
           // category="Bienestar"
           // description="Cuida tu salud y bienestar con nuestros servicios"
           imageUrl={smoothie}

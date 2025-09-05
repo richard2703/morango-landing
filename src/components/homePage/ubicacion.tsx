@@ -1,9 +1,10 @@
 import { MapPin } from 'lucide-react';
 import d4mor from '../../img/decorativos/4MOR.png';
 import d6mor from '../../img/decorativos/6MOR.png';
-import d4blc from '../../img/decorativos/4BLC.png';
-import d3blc from '../../img/decorativos/3BLC.png';
+// import d4blc from '../../img/decorativos/4BLC.png';
+// import d3blc from '../../img/decorativos/3BLC.png';
 import smothies from '../../img/smoothies.jpg';
+import valleReal from '../../img/fachadas/valleReal.png';
 
 const Ubicacion = ({ }) => {
     return (
@@ -17,7 +18,7 @@ const Ubicacion = ({ }) => {
                 </div>
 
                 {/* Lado Derecho - Dos secciones apiladas */}
-                <div className="grid grid-rows-2 gap-0 ">
+                <div className="grid grid-cols-1 gap-0 ">
 
                     {/* Sección Superior - "¿Dónde estamos?" */}
                     <div className=" p-8 flex flex-col justify-center text-white relative" style={{ backgroundColor: '#abc846' }}>
@@ -38,56 +39,36 @@ const Ubicacion = ({ }) => {
                             ¿Dónde estamos?
                         </h2>
 
-                        <div className="flex items-center space-x-4 cursor-pointer"
+                        <div className="flex items-center space-x-4 cursor-pointer p-4"
                             onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
                             <div className="bg-white bg-opacity-25 rounded-full p-4 backdrop-blur-sm">
-                                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                    <MapPin className="w-6 h-6 text-green-600" />
+                                <div className="w-18 h-18 bg-white rounded-full flex items-center justify-center">
+                                    {/* <MapPin className="w-6 h-6 text-green-600" /> */}
+                                    <img src={valleReal} alt="" className='absolute h-22 w-22 bg-white/20 rounded-full' />
                                 </div>
                             </div>
                             <div className="flex-1">
-                                <h3 className="text-xl font-bold">Valle Real</h3>
-                                <p className="text-sm opacity-90">Visítanos en nuestra sucursal • Clic para abrir Maps</p>
+                                <h3 className="text-2xl font-bold">Valle Real</h3>
+                                <p className="text-xl opacity-90">Visítanos en nuestra sucursal • Clic para abrir Maps</p>
+                            </div>
+                        </div>
+                        <div className="flex items-center space-x-4 cursor-pointer p-4"
+                            onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
+                            <div className="bg-white bg-opacity-25 rounded-full p-4 backdrop-blur-sm">
+                                <div className="w-18 h-18 bg-white rounded-full flex items-center justify-center">
+                                    {/* <MapPin className="w-6 h-6 text-green-600" /> */}
+                                                                        <img src={valleReal} alt="" className='absolute h-22 w-22 bg-white/20 rounded-full' />
+
+                                </div>
+                            </div>
+                            <div className="flex-1">
+                                <h3 className="text-2xl font-bold">Valle Real</h3>
+                                <p className="text-xl opacity-90">Visítanos en nuestra sucursal • Clic para abrir Maps</p>
                             </div>
                         </div>
                     </div>
 
-                    {/* Sección Inferior - "Pasa Por Tu Bowl" */}
-                    <div className="p-8 flex flex-col justify-center text-white relative " style={{ backgroundColor: '#6e3766' }}>
-                        {/* Decoración */}
-                        <div className="absolute top-4 right-6">
-                            <div className="w-10 h-10 text-white ">
-                                <img src={d3blc} alt="" />
-                            </div>
-                            <div className="absolute top-55 right-45">
-                                <div className="w-10 h-10 text-white ">
-                                    <img src={d4blc} alt="" />
-                                </div>
-                            </div>
-                        </div>
 
-                        <div className="flex items-center justify-between">
-                            <div>
-                                <h2 className="text-5xl font-bold leading-tight mb-2">
-                                    Pasa Por<br />
-                                    Tu Bowl
-                                </h2>
-                                {/* <p className="text-sm opacity-90 mb-4">Recoge tu pedido</p>
-                                <div className="flex items-center space-x-2">
-                                    <Check className="w-5 h-5" />
-                                    <span className="text-sm">Listo para recoger</span>
-                                </div> */}
-                            </div>
-
-                            <div className="ml-4">
-                                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                                    <svg className="w-8 h-8 " style={{ color: "#6e3766" }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
