@@ -83,7 +83,7 @@ const BannerCarousel = () => {
                         }}
                     >
                         {/* Overlay para mejor legibilidad del texto */}
-                        <div className={`absolute inset-0 ${banner.overlay}`}></div>
+                        {/* <div className={`absolute inset-0 ${banner.overlay}`}></div> */}
 
                         {/* Contenido del banner */}
                         <div className="relative z-10 text-center px-4">
