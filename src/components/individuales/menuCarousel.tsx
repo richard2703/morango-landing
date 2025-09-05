@@ -1,63 +1,74 @@
 import  { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+import d6aver from '../../img/decorativos/6AVER.png';
+import d7aver from '../../img/decorativos/7AVER.png';
+import d5bblue from '../../img/decorativos/5BBLUE.png';
+
+import smoothies from '../../img/smothie3.jpg';
+import detox from '../../img/detox.jpg';
+import nutella from '../../img/nutella.jpg';
+
 // Datos de las categorías del menú (duplicamos y agregamos más)
 const menuCategories = [
   {
     id: 1,
     name: 'smoothies',
     bgColor: '#6e3766',
-    image: '/api/placeholder/200/200', // Reemplaza con smoothies
+    image: smoothies, // Reemplaza con smoothies
     decorations: [
-      { type: 'image', src: '/api/placeholder/64/64', position: 'top-2 left-46', alt: 'd7aver' },
-      { type: 'image', src: '/api/placeholder/72/72', position: 'bottom-4 left-4', alt: 'd6aver' }
+      { type: 'image', src: d7aver, position: 'top-2 left-46 h-12', alt: 'd7aver',color: '',size: '' },
+      { type: 'image', src: d6aver, position: 'bottom-4 left-4 h-12', alt: 'd6aver',color: '',size: '' }
     ]
   },
   {
     id: 2,
     name: 'jugos & bebidas',
     bgColor: '#c4e0f2',
-    image: '/api/placeholder/200/200', // Reemplaza con detox
+    image: detox, // Reemplaza con detox
     decorations: [
-      { type: 'svg', position: 'top-8 right-8', color: 'text-pink-500 opacity-60', size: 'w-8 h-8' },
-      { type: 'svg', position: 'bottom-12 right-12', color: 'text-pink-500 opacity-40', size: 'w-6 h-6' },
-      { type: 'svg', position: 'bottom-16 right-6', color: 'text-pink-500 opacity-70', size: 'w-4 h-4' }
+      { type: 'svg', position: 'top-8 right-8', color: 'text-pink-500 opacity-60', size: 'w-8 h-8',src: '',alt: '' },
+      { type: 'svg', position: 'bottom-12 right-12', color: 'text-pink-500 opacity-40', size: 'w-6 h-6',  src: '',alt: '' },
+      { type: 'svg', position: 'bottom-16 right-6', color: 'text-pink-500 opacity-70', size: 'w-4 h-4',src: '',alt: '' },
     ]
   },
   {
     id: 3,
     name: 'acaí bowl',
     bgColor: '#da2f6e',
-    image: '/api/placeholder/200/200', // Reemplaza con nutella
+    image: nutella, // Reemplaza con nutella
     decorations: [
-      { type: 'image', src: '/api/placeholder/40/40', position: 'bottom-4 left-4', alt: 'd5bblue' }
+      { type: 'image', src: d5bblue, position: 'bottom-4 left-4 h-12', alt: 'd5bblue',color: '',size: '' }
     ]
   },
   {
     id: 4,
     name: 'protein bowls',
     bgColor: '#4a9b8e',
-    image: '/api/placeholder/200/200',
+    image: smoothies, // Reemplaza con smoothies
     decorations: [
-      { type: 'image', src: '/api/placeholder/50/50', position: 'top-4 right-4', alt: 'decoration' }
+      { type: 'image', src: d7aver, position: 'top-2 left-46 h-12', alt: 'd7aver',color: '',size: '' },
+      { type: 'image', src: d6aver, position: 'bottom-4 left-4 h-12', alt: 'd6aver', color: '',size: '' }
     ]
   },
   {
     id: 5,
     name: 'ensaladas',
     bgColor: '#7cb342',
-    image: '/api/placeholder/200/200',
+    image: detox, // Reemplaza con detox
     decorations: [
-      { type: 'svg', position: 'top-6 left-6', color: 'text-white opacity-50', size: 'w-6 h-6' }
+      { type: 'svg', position: 'top-8 right-8', color: 'text-pink-500 opacity-60', size: 'w-8 h-8',src: '',alt: '' },
+      { type: 'svg', position: 'bottom-12 right-12', color: 'text-pink-500 opacity-40', size: 'w-6 h-6' },
+      { type: 'svg', position: 'bottom-16 right-6', color: 'text-pink-500 opacity-70', size: 'w-4 h-4' }
     ]
   },
   {
     id: 6,
     name: 'snacks saludables',
     bgColor: '#ff8a65',
-    image: '/api/placeholder/200/200',
+    image: nutella, // Reemplaza con nutella
     decorations: [
-      { type: 'image', src: '/api/placeholder/45/45', position: 'bottom-6 right-6', alt: 'decoration' }
+      { type: 'image', src: d5bblue, position: 'bottom-4 left-4 h-12', alt: 'd5bblue' ,color: '',size: ''   }
     ]
   }
 ];
@@ -82,11 +93,11 @@ const MenuCarousel = () => {
   };
 
   // SVG Circle component para las decoraciones
-  // const CircleSVG = () => (
-  //   <svg viewBox="0 0 24 24" fill="currentColor">
-  //     <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-  //   </svg>
-  // );
+  const CircleSVG = () => (
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+    </svg>
+  );
 
   return (
     <div className="relative w-full max-w-6xl mx-auto">
@@ -110,18 +121,19 @@ const MenuCarousel = () => {
                       style={{ backgroundColor: category.bgColor }}
                     >
                       {/* Decoraciones de fondo */}
-                      {/* {category.decorations.map((decoration, index) => (
-                        // <div 
-                        //   key={index} 
-                        //   className={`absolute ${decoration.position} ${decoration.type === 'svg' ? decoration.color + ' ' + decoration.size : 'text-lime-400'}`}
-                        // >
-                        //   {decoration.type === 'svg' ? (
-                        //     <CircleSVG />
-                        //   ) : (
-                        //     <img src={decoration.src} alt={decoration.alt} className="w-full h-full object-contain" />
-                        //   )}
-                        // </div>
-                      ))} */}
+                      
+                      {category.decorations.map((decoration, index) => (
+                        <div 
+                          key={index} 
+                          className={`absolute ${decoration.position} ${decoration.type === 'svg' ? decoration.color + ' ' + decoration.size : 'text-lime-400'}`}
+                        >
+                          {decoration.type === 'svg' ? (
+                            <CircleSVG />
+                          ) : (
+                            <img src={decoration.src} alt={decoration.alt} className="w-full h-full object-contain" />
+                          )}
+                        </div>
+                      ))}
 
                       {/* Imagen principal */}
                       <div className="flex space-x-3 mb-6 z-10 pt-4">

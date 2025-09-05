@@ -10,7 +10,7 @@ const MenuAgrupado = () => {
     return (
         <div className="grid md:grid-cols-3 ">
             {/* Smoothies Section */}
-            <div className="relative bg-[#6e3766] flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
+            <div className="relative  flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
                 {/* Background decorative elements */}
                 <div className="absolute top-2 left-46 w-16 text-lime-400 ">
                     <img src={d7aver} alt="" />
@@ -34,7 +34,7 @@ const MenuAgrupado = () => {
             </div>
 
             {/* Jugos & Bebidas Section */}
-            <div className="relative bg-[#c4e0f2] flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
+            <div className="relative  flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
                 {/* Background decorative elements */}
                 <div className="absolute top-8 right-8 w-8 h-8 text-pink-500 opacity-60">
                     <svg viewBox="0 0 24 24" fill="currentColor">
@@ -67,7 +67,7 @@ const MenuAgrupado = () => {
             </div>
 
             {/* Acai Bowl Section */}
-            <div className="relative bg-[#da2f6e] flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
+            <div className="relative  flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
                 <div className="absolute bottom-4 left-4 w-10 text-lime-400 ">
                     <img src={d5bblue} alt="" />
                 </div>
@@ -85,7 +85,7 @@ const MenuAgrupado = () => {
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             </div>
                         {/* Smoothies Section */}
-            <div className="relative bg-[#6e3766] flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
+            <div className="relative flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
                 {/* Background decorative elements */}
                 <div className="absolute top-2 left-46 w-16 text-lime-400 ">
                     <img src={d7aver} alt="" />
@@ -109,7 +109,7 @@ const MenuAgrupado = () => {
             </div>
 
             {/* Jugos & Bebidas Section */}
-            <div className="relative bg-[#c4e0f2] flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
+            <div className="relative flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
                 {/* Background decorative elements */}
                 <div className="absolute top-8 right-8 w-8 h-8 text-pink-500 opacity-60">
                     <svg viewBox="0 0 24 24" fill="currentColor">
@@ -142,7 +142,7 @@ const MenuAgrupado = () => {
             </div>
 
             {/* Acai Bowl Section */}
-            <div className="relative bg-[#da2f6e] flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
+            <div className="relative flex flex-col items-center justify-center p-8 group cursor-pointer overflow-hidden">
                 <div className="absolute bottom-4 left-4 w-10 text-lime-400 ">
                     <img src={d5bblue} alt="" />
                 </div>
