@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { Calendar,  Users, Utensils, Gift, Phone, Mail, Send } from 'lucide-react';
+import { Calendar, Phone, Mail, Send } from 'lucide-react';
 
 const Eventos = () => {
   const [formData, setFormData] = useState({
@@ -17,51 +17,16 @@ const Eventos = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Tipos de eventos que ofrecen
-  const tiposEventos = [
-    {
-      id: 'corporativo',
-      titulo: "Eventos Corporativos",
-      descripcion: "Conferencias, seminarios, lanzamientos de producto y eventos empresariales",
-      icono: "🏢",
-      precio: "Desde $15,000",
-      servicios: ["Logística completa", "Equipo A/V", "Catering ejecutivo", "Coordinación"]
-    },
-    {
-      id: 'bodas',
-      titulo: "Bodas & Celebraciones",
-      descripcion: "Tu día especial merece una organización perfecta e inolvidable",
-      icono: "💒",
-      precio: "Desde $25,000",
-      servicios: ["Decoración personalizada", "Coordinación total", "Fotografía", "Música y DJ"]
-    },
-    {
-      id: 'sociales',
-      titulo: "Eventos Sociales",
-      descripción: "Cumpleaños, graduaciones, aniversarios y celebraciones familiares",
-      icono: "🎉",
-      precio: "Desde $8,000",
-      servicios: ["Decoración temática", "Entretenimiento", "Catering", "Fotografía"]
-    },
-    {
-      id: 'inauguraciones',
-      titulo: "Inauguraciones",
-      descripcion: "Aperturas de locales, presentaciones de proyectos y eventos de lanzamiento",
-      icono: "🎪",
-      precio: "Desde $12,000",
-      servicios: ["Marketing del evento", "Protocolo", "Medios", "Logística"]
-    }
-  ];
 
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  // const handleInputChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value
+  //   });
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
+    // e.preventDefault();
     
     if (!formData.nombre || !formData.email || !formData.tipoEvento) {
       setError('Por favor completa los campos obligatorios');
@@ -149,89 +114,6 @@ const Eventos = () => {
           </div>
         </div>
 
-        {/* Servicios que ofrecemos */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Nuestros Servicios</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {tiposEventos.map((evento) => (
-              <div key={evento.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8">
-                <div className="flex items-center mb-6">
-                  <span className="text-4xl mr-4">{evento.icono}</span>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">{evento.titulo}</h3>
-                    <p className="text-pink-500 font-semibold">{evento.precio}</p>
-                  </div>
-                </div>
-                
-                <p className="text-gray-600 mb-6">{evento.descripcion}</p>
-                
-                {/* <div className="space-y-2">
-                  <h4 className="font-semibold text-gray-900 mb-3">Incluye:</h4>
-                  {evento.servicios.map((servicio, index) => (
-                    <div key={index} className="flex items-center text-gray-600 text-sm">
-                      <div className="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
-                      {servicio}
-                    </div>
-                  ))}
-                </div> */}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Nuestros servicios adicionales */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">¿Qué incluimos en cada evento?</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
-              <div className="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-pink-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Coordinación Total</h3>
-              <p className="text-gray-600">Planificación completa desde la idea inicial hasta el último detalle del evento</p>
-            </div>
-
-            {/* <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
-              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Camera className="h-8 w-8 text-purple-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Fotografía & Video</h3>
-              <p className="text-gray-600">Capturamos cada momento especial con equipos profesionales de última generación</p>
-            </div> */}
-
-            {/* <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Music className="h-8 w-8 text-blue-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Audio & Entretenimiento</h3>
-              <p className="text-gray-600">Sistemas de sonido profesional, iluminación y entretenimiento personalizado</p>
-            </div> */}
-
-            <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Utensils className="h-8 w-8 text-green-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Catering Premium</h3>
-              <p className="text-gray-600">Menús personalizados con chefs especializados y opciones para todos los gustos</p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
-              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Gift className="h-8 w-8 text-orange-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Decoración Única</h3>
-              <p className="text-gray-600">Ambientación personalizada que refleja tu estilo y la esencia del evento</p>
-            </div>
-
-            {/* <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
-              <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="h-8 w-8 text-indigo-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Locaciones Exclusivas</h3>
-              <p className="text-gray-600">Acceso a las mejores ubicaciones y espacios para hacer tu evento único</p>
-            </div> */}
-          </div>
-        </div>
 
         {/* Formulario de Cotización */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-4xl mx-auto">
@@ -263,7 +145,9 @@ const Eventos = () => {
                   type="text"
                   name="nombre"
                   value={formData.nombre}
-                  onChange={handleInputChange}
+                  // onChange={handleInputChange}
+                              onChange={(e) => setFormData({...formData,[e.target.name]: e.target.value})}
+
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none"
                   placeholder="Tu nombre completo"
                   required
@@ -278,7 +162,8 @@ const Eventos = () => {
                   type="email"
                   name="email"
                   value={formData.email}
-                  onChange={handleInputChange}
+                  // onChange={handleInputChange}
+                  onChange={(e) => setFormData({...formData,[e.target.name]: e.target.value})}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none"
                   placeholder="tu@email.com"
                   required
@@ -295,7 +180,8 @@ const Eventos = () => {
                   type="tel"
                   name="telefono"
                   value={formData.telefono}
-                  onChange={handleInputChange}
+                  // onChange={handleInputChange}
+                  onChange={(e) => setFormData({...formData,[e.target.name]: e.target.value})}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none"
                   placeholder="+52 33 1234 5678"
                 />
@@ -308,7 +194,8 @@ const Eventos = () => {
                 <select
                   name="tipoEvento"
                   value={formData.tipoEvento}
-                  onChange={handleInputChange}
+                  // onChange={handleInputChange}
+                  onChange={(e) => setFormData({...formData,[e.target.name]: e.target.value})}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none"
                   required
                 >
@@ -333,7 +220,8 @@ const Eventos = () => {
                   type="date"
                   name="fecha"
                   value={formData.fecha}
-                  onChange={handleInputChange}
+                  // onChange={handleInputChange}
+                  onChange={(e) => setFormData({...formData,[e.target.name]: e.target.value})}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none"
                 />
               </div>
@@ -345,7 +233,8 @@ const Eventos = () => {
                 <select
                   name="invitados"
                   value={formData.invitados}
-                  onChange={handleInputChange}
+                  // onChange={handleInputChange}
+                  onChange={(e) => setFormData({...formData,[e.target.name]: e.target.value})}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none"
                 >
                   <option value="">Selecciona cantidad</option>
@@ -365,7 +254,8 @@ const Eventos = () => {
                 <select
                   name="presupuesto"
                   value={formData.presupuesto}
-                  onChange={handleInputChange}
+                  // onChange={handleInputChange}
+                  onChange={(e) => setFormData({...formData,[e.target.name]: e.target.value})}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none"
                 >
                   <option value="">Selecciona rango</option>
@@ -386,7 +276,8 @@ const Eventos = () => {
                 type="text"
                 name="ubicacion"
                 value={formData.ubicacion}
-                onChange={handleInputChange}
+                // onChange={handleInputChange}
+                onChange={(e) => setFormData({...formData,[e.target.name]: e.target.value})}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none"
                 placeholder="Ciudad o zona específica"
               />
@@ -399,8 +290,9 @@ const Eventos = () => {
               <textarea
                 name="mensaje"
                 value={formData.mensaje}
-                onChange={handleInputChange}
-                rows="4"
+                // onChange={handleInputChange}
+                onChange={(e) => setFormData({...formData,[e.target.name]: e.target.value})}
+                rows = {4}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none resize-none"
                 placeholder="Describe tu visión, temas específicos, requerimientos especiales, etc."
               ></textarea>

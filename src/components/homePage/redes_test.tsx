@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 const SocialMediaComponent = () => {
   // Datos de ejemplo para los últimos posts
