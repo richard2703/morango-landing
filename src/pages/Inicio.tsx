@@ -32,14 +32,14 @@ const Inicio = () => {
         <Ubicacion />
       </section>
 
-      {/* Opiniones */}
-      <section>
-        <ClientsSection />
-      </section>
-
       {/* Eslogan y menú */}
       <section>
         <MenuSection />
+      </section>
+
+      {/* Opiniones */}
+      <section>
+        <ClientsSection />
       </section>
 
       {/* Redes */}

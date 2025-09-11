@@ -14,7 +14,7 @@ const menuCategories = [
   {
     id: 1,
     name: 'Smoothies',
-    bgColor: '#1c5c99',
+    // bgColor: '#1c5c99',
     image: smoothies, // Reemplaza con smoothies
     decorations: [
       { type: 'image', src: d7aver, position: 'top-2 left-46 h-12', alt: 'd7aver',color: '',size: '' },
@@ -24,7 +24,7 @@ const menuCategories = [
   {
     id: 2,
     name: 'Jugos & Bebidas',
-    bgColor: '#c4e0f2',
+    // bgColor: '#c4e0f2',
     image: detox, // Reemplaza con detox
     decorations: [
       { type: 'svg', position: 'top-8 right-8', color: 'text-pink-500 opacity-60', size: 'w-8 h-8',src: '',alt: '' },
@@ -35,7 +35,7 @@ const menuCategories = [
   {
     id: 3,
     name: 'Açaí bowl',
-    bgColor: '#da2f6e',
+    // bgColor: '#da2f6e',
     image: nutella, // Reemplaza con nutella
     decorations: [
       { type: 'image', src: d5bblue, position: 'bottom-4 left-4 h-12', alt: 'd5bblue',color: '',size: '' }

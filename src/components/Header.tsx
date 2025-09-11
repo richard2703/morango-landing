@@ -23,9 +23,9 @@ const Header: React.FC = () => {
         {/* Menu Desktop */}
         <nav className="hidden md:block">
           <ul className="flex space-x-8 text-[#005120] font-medium text-lg">
-            {/* <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 " >
-              menú
-            </li> */}
+            <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 " onClick={() => (window.location.href = "/eventos")}>
+              Eventos
+            </li>
             <li className="cursor-pointer hover:text-green-200 transition-colors duration-200" onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
               Ubicación
             </li>
@@ -71,14 +71,14 @@ const Header: React.FC = () => {
           <div className="absolute top-full left-0 w-full bg-green-700 md:hidden z-50">
             <nav className="px-4 py-4">
               <ul className="space-y-4">
-                {/* <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg">
-                  menú
-                </li> */}
-                <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg" onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
-                  ubicación
+                <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg" onClick={() => (window.location.href = "/eventos")}>
+                  Eventos
                 </li>
-                <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg">
-                  franquicias
+                <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg" onClick={() => window.open('https://maps.app.goo.gl/s9xJYemKGUmayEgUA', '_blank')}>
+                  Ubicación
+                </li>
+                <li className="cursor-pointer hover:text-green-200 transition-colors duration-200 text-white font-medium text-lg" onClick={() => (window.location.href = "/franquicias")}>
+                  Franquicias
                 </li>
               </ul>
             </nav>
