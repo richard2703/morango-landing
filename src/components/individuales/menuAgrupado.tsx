@@ -26,7 +26,7 @@ const MenuAgrupado = () => {
 
                 {/* Label */}
                 <div className="bg-white rounded-full px-8 py-3 z-10">
-                    <span className="text-[#6e3766] font-bold text-xl">smoothies</span>
+                    <span className="text-[#6e3766] font-bold text-xl">Smoothies</span>
                 </div>
 
                 {/* Hover effect */}
@@ -59,7 +59,7 @@ const MenuAgrupado = () => {
 
                 {/* Label */}
                 <div className="bg-white rounded-full px-6 py-3 z-10">
-                    <span className="text-[#6e3766] font-bold text-xl">jugos & bebidas</span>
+                    <span className="text-[#6e3766] font-bold text-xl">Jugos & Bebidas</span>
                 </div>
 
                 {/* Hover effect */}
@@ -78,7 +78,7 @@ const MenuAgrupado = () => {
 
                 {/* Label */}
                 <div className="bg-white rounded-full px-8 py-3 z-10">
-                    <span className="text-[#6e3766] font-bold text-xl">acaí bowl</span>
+                    <span className="text-[#6e3766] font-bold text-xl">Açaí bowl</span>
                 </div>
 
                 {/* Hover effect */}
@@ -101,7 +101,7 @@ const MenuAgrupado = () => {
 
                 {/* Label */}
                 <div className="bg-white rounded-full px-8 py-3 z-10">
-                    <span className="text-[#6e3766] font-bold text-xl">smoothies</span>
+                    <span className="text-[#6e3766] font-bold text-xl">Protein bowls</span>
                 </div>
 
                 {/* Hover effect */}
@@ -134,7 +134,7 @@ const MenuAgrupado = () => {
 
                 {/* Label */}
                 <div className="bg-white rounded-full px-6 py-3 z-10">
-                    <span className="text-[#6e3766] font-bold text-xl">jugos & bebidas</span>
+                    <span className="text-[#6e3766] font-bold text-xl">Ensaladas</span>
                 </div>
 
                 {/* Hover effect */}
@@ -153,7 +153,7 @@ const MenuAgrupado = () => {
 
                 {/* Label */}
                 <div className="bg-white rounded-full px-8 py-3 z-10">
-                    <span className="text-[#6e3766] font-bold text-xl">acaí bowl</span>
+                    <span className="text-[#6e3766] font-bold text-xl">Snacks saludables</span>
                 </div>
 
                 {/* Hover effect */}

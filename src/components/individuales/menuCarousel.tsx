@@ -13,8 +13,8 @@ import nutella from '../../img/nutella.jpg';
 const menuCategories = [
   {
     id: 1,
-    name: 'smoothies',
-    bgColor: '#6e3766',
+    name: 'Smoothies',
+    bgColor: '#1c5c99',
     image: smoothies, // Reemplaza con smoothies
     decorations: [
       { type: 'image', src: d7aver, position: 'top-2 left-46 h-12', alt: 'd7aver',color: '',size: '' },
@@ -23,7 +23,7 @@ const menuCategories = [
   },
   {
     id: 2,
-    name: 'jugos & bebidas',
+    name: 'Jugos & Bebidas',
     bgColor: '#c4e0f2',
     image: detox, // Reemplaza con detox
     decorations: [
@@ -34,7 +34,7 @@ const menuCategories = [
   },
   {
     id: 3,
-    name: 'acaí bowl',
+    name: 'Açaí bowl',
     bgColor: '#da2f6e',
     image: nutella, // Reemplaza con nutella
     decorations: [
@@ -43,7 +43,7 @@ const menuCategories = [
   },
   {
     id: 4,
-    name: 'protein bowls',
+    name: 'Protein bowls',
     bgColor: '#4a9b8e',
     image: smoothies, // Reemplaza con smoothies
     decorations: [
@@ -53,7 +53,7 @@ const menuCategories = [
   },
   {
     id: 5,
-    name: 'ensaladas',
+    name: 'Ensaladas',
     bgColor: '#7cb342',
     image: detox, // Reemplaza con detox
     decorations: [
@@ -64,7 +64,7 @@ const menuCategories = [
   },
   {
     id: 6,
-    name: 'snacks saludables',
+    name: 'Snacks saludables',
     bgColor: '#ff8a65',
     image: nutella, // Reemplaza con nutella
     decorations: [
