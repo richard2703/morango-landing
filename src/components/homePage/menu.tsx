@@ -5,7 +5,7 @@ import d2rose from '../../img/decorativos/2ROS.png';
 import d7rose from '../../img/decorativos/7ROS.png';
 const MenuSection = () => {
   return (
-    <div className=" ">
+    <div className=" pt-8 pb-16 ">
       {/* Header with curved text and logos */}
       <div className="relative  pt-8 pb-4 overflow-hidden min-h-24">
         <div className="relative z-10 max-w-6xl mx-auto px-4">
@@ -26,13 +26,13 @@ const MenuSection = () => {
       </div>
 
       {/* Menu Title Section */}
-      <div className=" py-16">
+      {/* <div className=" py-16">
         <div className="max-w-6xl mx-auto text-center px-4">
           <h1 className="text-6xl md:text-7xl font-bold text-[#005120] ">
             Menú
           </h1>
         </div>
-      </div>
+      </div> */}
 
       <MenuCarousel />
       <MenuAgrupado />
